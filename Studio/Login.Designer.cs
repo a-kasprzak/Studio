@@ -60,10 +60,11 @@ namespace Studio
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.Orchid;
-            this.guna2Button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(438, 292);
@@ -167,10 +168,11 @@ namespace Studio
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BorderRadius = 10;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.Orchid;
-            this.guna2Button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(438, 353);
