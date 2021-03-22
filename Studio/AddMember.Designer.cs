@@ -46,6 +46,7 @@ namespace Studio
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,9 +56,10 @@ namespace Studio
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Orchid;
-            this.label1.Location = new System.Drawing.Point(446, 9);
+            this.label1.Location = new System.Drawing.Point(358, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(312, 61);
+            this.label1.Size = new System.Drawing.Size(250, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "Studio Figura";
             // 
@@ -75,13 +77,14 @@ namespace Studio
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(270, 185);
+            this.guna2TextBox1.Location = new System.Drawing.Point(202, 147);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(150, 36);
             this.guna2TextBox1.TabIndex = 3;
             // 
             // guna2TextBox2
@@ -98,13 +101,14 @@ namespace Studio
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(270, 273);
+            this.guna2TextBox2.Location = new System.Drawing.Point(202, 222);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox2.Size = new System.Drawing.Size(150, 36);
             this.guna2TextBox2.TabIndex = 5;
             // 
             // label4
@@ -113,9 +117,10 @@ namespace Studio
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Orchid;
-            this.label4.Location = new System.Drawing.Point(533, 240);
+            this.label4.Location = new System.Drawing.Point(400, 195);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 21);
+            this.label4.Size = new System.Drawing.Size(41, 18);
             this.label4.TabIndex = 8;
             this.label4.Text = "Wiek";
             // 
@@ -133,13 +138,14 @@ namespace Studio
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(537, 273);
+            this.guna2TextBox3.Location = new System.Drawing.Point(403, 222);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox3.Size = new System.Drawing.Size(150, 36);
             this.guna2TextBox3.TabIndex = 7;
             // 
             // guna2ComboBox1
@@ -158,10 +164,11 @@ namespace Studio
             "Mężczyzna",
             "Kobieta"});
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(796, 181);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(597, 147);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(151, 36);
             this.guna2ComboBox1.TabIndex = 9;
             // 
             // label5
@@ -170,9 +177,10 @@ namespace Studio
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Orchid;
-            this.label5.Location = new System.Drawing.Point(792, 152);
+            this.label5.Location = new System.Drawing.Point(594, 124);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 21);
+            this.label5.Size = new System.Drawing.Size(37, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Płeć";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -183,9 +191,10 @@ namespace Studio
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Orchid;
-            this.label6.Location = new System.Drawing.Point(533, 152);
+            this.label6.Location = new System.Drawing.Point(400, 124);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(156, 21);
+            this.label6.Size = new System.Drawing.Size(131, 18);
             this.label6.TabIndex = 12;
             this.label6.Text = "Kwota miesięczna";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -204,13 +213,14 @@ namespace Studio
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(537, 185);
+            this.guna2TextBox4.Location = new System.Drawing.Point(403, 147);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox4.Size = new System.Drawing.Size(150, 36);
             this.guna2TextBox4.TabIndex = 11;
             this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
@@ -218,9 +228,10 @@ namespace Studio
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Orchid;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 587);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 477);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1233, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(925, 26);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -234,10 +245,11 @@ namespace Studio
             this.guna2Button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(487, 418);
+            this.guna2Button1.Location = new System.Drawing.Point(403, 327);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(250, 39);
+            this.guna2Button1.Size = new System.Drawing.Size(150, 32);
             this.guna2Button1.TabIndex = 14;
             this.guna2Button1.Text = "Dodaj";
             this.guna2Button1.UseTransparentBackground = true;
@@ -252,10 +264,11 @@ namespace Studio
             this.guna2Button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(487, 489);
+            this.guna2Button2.Location = new System.Drawing.Point(403, 394);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(250, 39);
+            this.guna2Button2.Size = new System.Drawing.Size(150, 32);
             this.guna2Button2.TabIndex = 15;
             this.guna2Button2.Text = "Wstecz";
             this.guna2Button2.UseTransparentBackground = true;
@@ -273,13 +286,16 @@ namespace Studio
             this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.Items.AddRange(new object[] {
-            "Mężczyzna",
-            "Kobieta"});
+            "8:00 - 9:00",
+            "9:00 - 10:00",
+            "10:00 - 11:00",
+            "11:00 - 12:00"});
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(796, 273);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(597, 222);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(200, 36);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(151, 36);
             this.guna2ComboBox2.TabIndex = 16;
             // 
             // label3
@@ -288,9 +304,10 @@ namespace Studio
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Orchid;
-            this.label3.Location = new System.Drawing.Point(266, 240);
+            this.label3.Location = new System.Drawing.Point(200, 195);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 21);
+            this.label3.Size = new System.Drawing.Size(114, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Numer telefonu";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -301,9 +318,10 @@ namespace Studio
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Orchid;
-            this.label2.Location = new System.Drawing.Point(266, 152);
+            this.label2.Location = new System.Drawing.Point(200, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 21);
+            this.label2.Size = new System.Drawing.Size(142, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nazwa użytkownika";
             // 
@@ -313,19 +331,34 @@ namespace Studio
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Orchid;
-            this.label7.Location = new System.Drawing.Point(792, 240);
+            this.label7.Location = new System.Drawing.Point(594, 195);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 21);
+            this.label7.Size = new System.Drawing.Size(62, 18);
             this.label7.TabIndex = 17;
             this.label7.Text = "Godziny";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Franklin Gothic Medium", 15F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Orchid;
+            this.label8.Location = new System.Drawing.Point(382, 76);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(197, 25);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Dodawanie członka";
+            // 
             // AddMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1233, 619);
+            this.ClientSize = new System.Drawing.Size(925, 503);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -343,6 +376,7 @@ namespace Studio
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddMember";
@@ -370,5 +404,6 @@ namespace Studio
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
