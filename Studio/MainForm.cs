@@ -35,5 +35,22 @@ namespace Studio
         {
 
         }
+
+        private void AddMember_Click(object sender, EventArgs e)
+        {
+            AddMember addMember = new AddMember();
+            addMember.Show();
+            this.Hide();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

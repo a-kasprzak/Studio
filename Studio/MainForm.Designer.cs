@@ -98,6 +98,7 @@ namespace Studio
             this.AddMember.Size = new System.Drawing.Size(195, 49);
             this.AddMember.TabIndex = 2;
             this.AddMember.Text = "Dodaj Użytkownika";
+            this.AddMember.Click += new System.EventHandler(this.AddMember_Click);
             // 
             // guna2Button4
             // 
@@ -117,6 +118,7 @@ namespace Studio
             this.guna2Button4.Size = new System.Drawing.Size(195, 49);
             this.guna2Button4.TabIndex = 7;
             this.guna2Button4.Text = "Wyjście";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // label1
             // 
@@ -184,6 +186,7 @@ namespace Studio
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
