@@ -16,6 +16,15 @@ namespace Studio
             InitializeComponent();
         }
 
+        private void SetDataTime()
+        {
+
+            Godzina.Text = DateTime.Now.ToLongTimeString();
+            Data.Text = DateTime.Now.ToLongDateString();
+        }
+
+       
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -33,7 +42,7 @@ namespace Studio
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void AddMember_Click(object sender, EventArgs e)
@@ -50,7 +59,7 @@ namespace Studio
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            SetDataTime();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -65,6 +74,12 @@ namespace Studio
             UpdateDelete updateDelete = new UpdateDelete();
             updateDelete.Show();
             this.Hide();
+        }
+
+        // Data
+        private void Data_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

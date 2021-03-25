@@ -36,8 +36,8 @@ namespace Studio
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Godzina = new System.Windows.Forms.Label();
+            this.Data = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -144,30 +144,31 @@ namespace Studio
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // Godzina
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(532, 248);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(279, 80);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "15:23";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Godzina.AutoSize = true;
+            this.Godzina.BackColor = System.Drawing.Color.Transparent;
+            this.Godzina.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Godzina.ForeColor = System.Drawing.Color.White;
+            this.Godzina.Location = new System.Drawing.Point(449, 236);
+            this.Godzina.Name = "Godzina";
+            this.Godzina.Size = new System.Drawing.Size(279, 80);
+            this.Godzina.TabIndex = 23;
+            this.Godzina.Text = "15:23";
+            this.Godzina.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // Data
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(488, 345);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(370, 24);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Poniedziałek, 21.02.2021";
+            this.Data.AutoSize = true;
+            this.Data.BackColor = System.Drawing.Color.Transparent;
+            this.Data.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold);
+            this.Data.ForeColor = System.Drawing.Color.White;
+            this.Data.Location = new System.Drawing.Point(488, 345);
+            this.Data.Name = "Data";
+            this.Data.Size = new System.Drawing.Size(370, 24);
+            this.Data.TabIndex = 24;
+            this.Data.Text = "Poniedziałek, 21.02.2021";
+            this.Data.Click += new System.EventHandler(this.Data_Click);
             // 
             // guna2Button2
             // 
@@ -196,8 +197,8 @@ namespace Studio
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1233, 619);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Data);
+            this.Controls.Add(this.Godzina);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button4);
@@ -224,8 +225,8 @@ namespace Studio
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Godzina;
+        private System.Windows.Forms.Label Data;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
