@@ -80,8 +80,8 @@ namespace Studio
             PhoneTb.Text = "";
             AmountTb.Text = "";
             AgeTb.Text = "";
-            GenderTb.Items.Clear();
-            TimingTb.Items.Clear();
+            GenderTb.Text = "";
+            TimingTb.Text = "";
 
 
             

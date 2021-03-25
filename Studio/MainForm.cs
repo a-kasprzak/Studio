@@ -52,5 +52,19 @@ namespace Studio
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            ViewMembers viewMembers = new ViewMembers();
+            viewMembers.Show();
+            this.Hide();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            UpdateDelete updateDelete = new UpdateDelete();
+            updateDelete.Show();
+            this.Hide();
+        }
     }
 }
