@@ -57,5 +57,34 @@ namespace Studio
         {
 
         }
+
+        // pay button 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (UserCb.Text == "" && AmountTb.Text == "")
+                {
+                    MessageBox.Show("Uzupełnij informacje.");
+                }
+                else
+                {
+                    conn.Open();
+                    string Data1 = MonthCb.Value.ToString();
+                    string query = $"INSERT into PaymentsTbl Values ('{UserCb.Text}',{AmountTb.Text},'{Data1}');";
+                    SqlCommand sqlCommand = new SqlCommand(query, conn);
+                    sqlCommand.ExecuteNonQuery();
+                    MessageBox.Show($"Płatność została wykonana.");
+                    conn.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
+        }
     }
 }

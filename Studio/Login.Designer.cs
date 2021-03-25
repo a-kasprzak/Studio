@@ -151,9 +151,9 @@ namespace Studio
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Orchid;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 416);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 426);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(800, 24);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 

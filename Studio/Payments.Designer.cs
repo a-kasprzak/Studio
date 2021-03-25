@@ -41,10 +41,12 @@ namespace Studio
             this.label3 = new System.Windows.Forms.Label();
             this.AmountTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Month = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.MonthCb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.UserCb = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,7 +72,7 @@ namespace Studio
             this.guna2Button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.2F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(541, 527);
+            this.guna2Button3.Location = new System.Drawing.Point(16, 519);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
@@ -86,17 +88,18 @@ namespace Studio
             this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Orchid;
+            this.guna2Button1.FillColor = System.Drawing.Color.Green;
             this.guna2Button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.2F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(23, 421);
+            this.guna2Button1.Location = new System.Drawing.Point(62, 418);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(195, 49);
+            this.guna2Button1.Size = new System.Drawing.Size(159, 38);
             this.guna2Button1.TabIndex = 26;
             this.guna2Button1.Text = "Zapłać";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -109,11 +112,11 @@ namespace Studio
             this.guna2Button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.2F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(23, 488);
+            this.guna2Button2.Location = new System.Drawing.Point(313, 502);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(195, 49);
+            this.guna2Button2.Size = new System.Drawing.Size(154, 38);
             this.guna2Button2.TabIndex = 27;
             this.guna2Button2.Text = "Wyczyść";
             // 
@@ -123,7 +126,7 @@ namespace Studio
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Orchid;
-            this.label2.Location = new System.Drawing.Point(16, 90);
+            this.label2.Location = new System.Drawing.Point(12, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 21);
             this.label2.TabIndex = 29;
@@ -135,7 +138,7 @@ namespace Studio
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Orchid;
-            this.label3.Location = new System.Drawing.Point(16, 189);
+            this.label3.Location = new System.Drawing.Point(9, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 21);
             this.label3.TabIndex = 31;
@@ -156,7 +159,7 @@ namespace Studio
             this.AmountTb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AmountTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AmountTb.HoverState.Parent = this.AmountTb;
-            this.AmountTb.Location = new System.Drawing.Point(18, 218);
+            this.AmountTb.Location = new System.Drawing.Point(11, 246);
             this.AmountTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AmountTb.Name = "AmountTb";
             this.AmountTb.PasswordChar = '\0';
@@ -172,27 +175,27 @@ namespace Studio
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Orchid;
-            this.label4.Location = new System.Drawing.Point(16, 294);
+            this.label4.Location = new System.Drawing.Point(9, 322);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 33;
             this.label4.Text = "Data";
             // 
-            // Month
+            // MonthCb
             // 
-            this.Month.CheckedState.Parent = this.Month;
-            this.Month.FillColor = System.Drawing.Color.White;
-            this.Month.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Month.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.Month.HoverState.Parent = this.Month;
-            this.Month.Location = new System.Drawing.Point(20, 318);
-            this.Month.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.Month.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.Month.Name = "Month";
-            this.Month.ShadowDecoration.Parent = this.Month;
-            this.Month.Size = new System.Drawing.Size(257, 44);
-            this.Month.TabIndex = 34;
-            this.Month.Value = new System.DateTime(2021, 3, 22, 18, 48, 12, 48);
+            this.MonthCb.CheckedState.Parent = this.MonthCb;
+            this.MonthCb.FillColor = System.Drawing.Color.White;
+            this.MonthCb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.MonthCb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.MonthCb.HoverState.Parent = this.MonthCb;
+            this.MonthCb.Location = new System.Drawing.Point(13, 346);
+            this.MonthCb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.MonthCb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.MonthCb.Name = "MonthCb";
+            this.MonthCb.ShadowDecoration.Parent = this.MonthCb;
+            this.MonthCb.Size = new System.Drawing.Size(257, 44);
+            this.MonthCb.TabIndex = 34;
+            this.MonthCb.Value = new System.DateTime(2021, 3, 22, 18, 48, 12, 48);
             // 
             // guna2DataGridView1
             // 
@@ -222,13 +225,13 @@ namespace Studio
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(303, 119);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(313, 166);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(797, 372);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(793, 331);
             this.guna2DataGridView1.TabIndex = 35;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -266,12 +269,22 @@ namespace Studio
             this.UserCb.HoverState.Parent = this.UserCb;
             this.UserCb.ItemHeight = 30;
             this.UserCb.ItemsAppearance.Parent = this.UserCb;
-            this.UserCb.Location = new System.Drawing.Point(20, 119);
+            this.UserCb.Location = new System.Drawing.Point(13, 147);
             this.UserCb.Name = "UserCb";
             this.UserCb.ShadowDecoration.Parent = this.UserCb;
             this.UserCb.Size = new System.Drawing.Size(257, 36);
             this.UserCb.TabIndex = 36;
             this.UserCb.SelectedIndexChanged += new System.EventHandler(this.UserCb_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Orchid;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 597);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1233, 22);
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
             // 
             // Payments
             // 
@@ -279,9 +292,10 @@ namespace Studio
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1233, 619);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UserCb);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.Month);
+            this.Controls.Add(this.MonthCb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.AmountTb);
@@ -296,6 +310,7 @@ namespace Studio
             this.Text = "Payments";
             this.Load += new System.EventHandler(this.Payments_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,8 +326,9 @@ namespace Studio
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox AmountTb;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker Month;
+        private Guna.UI2.WinForms.Guna2DateTimePicker MonthCb;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2ComboBox UserCb;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

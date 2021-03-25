@@ -29,7 +29,6 @@ namespace Studio
                 string query = "Select * from UserTbl";
 
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, conn);
-                SqlCommandBuilder builder = new SqlCommandBuilder();
 
                 var dataSet = new DataSet();
                 sqlDataAdapter.Fill(dataSet);
