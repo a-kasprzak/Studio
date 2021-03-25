@@ -32,7 +32,9 @@ namespace Studio
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            Payments payments = new Payments();
+            payments.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)

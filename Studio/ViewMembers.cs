@@ -22,11 +22,10 @@ namespace Studio
 
         private void SelectAllUsers()
         {
-            if (conn.State == ConnectionState.Open) conn.Open();
-
+           
             try
             {
-                conn.Close();
+                conn.Open();
                 string query = "Select * from UserTbl";
 
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, conn);
@@ -35,6 +34,7 @@ namespace Studio
                 var dataSet = new DataSet();
                 sqlDataAdapter.Fill(dataSet);
                 Userlist.DataSource = dataSet.Tables[0];
+                conn.Close();
 
 
             }
@@ -42,10 +42,19 @@ namespace Studio
             {
                 throw ex;
             }
-            finally
-            {
-                if (conn.State == ConnectionState.Open) conn.Close();
-            }
+           
+        }
+
+        private void FindAnUser()
+        {
+            conn.Open();
+            string query = $"SELECT * FROM UserTbl Where Name = '{FindTb.Text}';";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query,conn);
+
+            var dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+            Userlist.DataSource = dataSet.Tables[0];
+            conn.Close();
         }
 
 
@@ -72,6 +81,19 @@ namespace Studio
         }
 
         private void ViewMembers_Load(object sender, EventArgs e)
+        {
+            SelectAllUsers();
+        }
+
+        // find button
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+            FindAnUser();
+        }
+
+        // search button
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             SelectAllUsers();
         }
