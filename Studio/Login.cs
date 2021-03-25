@@ -38,7 +38,31 @@ namespace Studio
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //login button
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (LoginNameTb.Text == "admin" && PasswordTb.Text == "admin")
+            {
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+                this.Hide();
+            }
+            else if (LoginNameTb.Text == "" && PasswordTb.Text == "")
+            {
+                MessageBox.Show("Uzupełnij brakujące pola");
+            }
+            else
+            {
+                MessageBox.Show("Nie poprawny login lub hasło");
+            }
         }
     }
 }
